@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/img/return.png"
+    />
+    <link rel="stylesheet" href="assets/css/spiner.css" />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/scroll.css" />
+    <link rel="stylesheet" href="assets/css/gamb.css" />
+    <title>OGG-Verst</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--[if gte IE 5]><script>
+    createPopup().show(0, 0, 0, 0, 0);
+  <script><![endif]-->
+
+  <body oncontextmenu="return false;" id="noselect">
+    <!-- preloader -->
+    <div class="preloader">
+      <div class="preloader-2">
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+    <!-- preloader -->
+    <!-- gamb-->
+    <div class="wrapper scrollto" id="top">
+      <main class="page">
+        <header class="header">
+          <div class="header__row">
+            <nav class="header__menu menu">
+              <div class="menu__icon icon-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="menu__body">
+                <ul class="menu__list" id="menu">
+                  <li><a href="#top" class="menu__link">главная</a></li>
+                  <li><a href="#about" class="menu__link">о нас</a></li>
+                  <li><a href="#project" class="menu__link">проекты</a></li>
+                  <li><a href="#contact" class="menu__link">контакты</a></li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </header>
+      </main>
+    </div>
+
+    <!-- scroll-->
+    <div class="scrollup" style="display: block">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+        viewBox="0 0 24 14"
+        width="18"
+        height="32"
+      >
+        <path
+          d="M12.896.37l10.267 10.267a1.268 1.268 0 0 1 0 1.794l-1.197 1.197a1.268 1.268 0 0 1-1.79.002L12 5.495 3.826 13.63a1.268 1.268 0 0 1-1.791-.003L.838 12.431a1.268 1.268 0 0 1 0-1.794L11.103.372a1.268 1.268 0 0 1 1.794 0z"
+          fill="currentColor"
+        ></path>
+      </svg>
+    </div>
+    <!--scroll-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/spiner.js"></script>
+    <script src="assets/script.js"></script>
+    <script src="assets/scroll.js"></script>
+    <script>
+      function disableSelection(target) {
+        if (typeof target.onseselectstart != "undefined")
+          target.onseselectstart = function () {
+            return false;
+          };
+        else if (typeof target.style.MozUserSelect != "undefined")
+          target.style.MozUserSelect = "none";
+        else
+          target.onmousedown = function () {
+            return false;
+          };
+        target.style.cursor = "default";
+      }
+
+      if (document.getElementById("noselect"))
+        disableSelection(document.getElementById("noselect"));
+    </script>
+  </body>
+</html>
