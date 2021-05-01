@@ -14,20 +14,24 @@ $('.menu__body a').click(function() {
 
 });
 
+let money = prompt("Ваш бюджет на месяц?", ''),
+	time = prompt('Введите дату в формате YYYY-MM-DD', '');
 
-
-let persone = {
-	name: "gena",
-	age: 30,
-	isMarried: false
+let appData = {
+	budget: money,
+	expenses: {},
+	optionalExpeses: {},
+	income: [],
+	timeData: time,
+	savings: false
 };
 
-console.log(persone["isMarried"]);
+let a1 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+	a2 = prompt("Во сколько обойдется?", ''),
+	a3 = prompt("Введите обязательную статью расходов в этом месяце", ''),
+	a4 = prompt("Во сколько обойдется?", '');
 
-let arr = ['plum.png', 'orange.jpg', 'apple.bmp'];
+appData.expenses.a1 = a2;
+appData.expenses.a3 = a4;
 
-console.log(arr[0]);
-
-let answer = prompt("Есть ли вам 60?", "Да");
-
-console.log(answer);
+alert(appData.budget / 30);
